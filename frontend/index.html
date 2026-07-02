@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Garcia Hermida | Cloud & AI Ops Engineer</title>
+    <meta name="description"
+        content="Cloud Platform & AI Ops Engineer specializing in AWS, Kubernetes, Terraform, and AI orchestration. Relocating to Lausanne, Switzerland.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hermida95.github.io/myLandingPage/">
+    <meta property="og:title" content="Miguel Garcia Hermida | Cloud & AI Ops Engineer">
+    <meta property="og:description"
+        content="Building scalable cloud infrastructure and orchestrating AI solutions. Driven by Infrastructure as Code and robust CI/CD pipelines.">
+    <meta property="og:image" content="https://hermida95.github.io/myLandingPage/img/Img-previsualizacion.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">MGH.</div>
+            <nav class="nav-links">
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#projects" data-i18n="nav.work">Work</a>
+                <a href="#experience" data-i18n="nav.experience">Experience</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="lang-toggle-wrapper">
+                    <button id="langToggle" class="lang-toggle" aria-label="Toggle Language">
+                        <span class="lang-active">EN</span> / <span class="lang-inactive">FR</span>
+                    </button>
+                </div>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary" data-i18n="nav.contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero slide-up">
+            <div class="container">
+                <h1 class="hero-title">Miguel Garcia Hermida<span class="dot">.</span></h1>
+                <h2 class="hero-subtitle" data-i18n="hero.subtitle">Cloud Platform & AI Ops Engineer.</h2>
+                <p class="hero-description" data-i18n="hero.desc">
+                    Bridging software development, cloud infrastructure, and AI orchestration. Building with Node.js, Python, and AWS. Driven by Infrastructure as Code (Terraform), Kubernetes, and scalable CI/CD pipelines.
+                </p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero.cta">View Projects</a>
+                    <a href="https://github.com/Hermida95" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <div class="dropdown-cv">
+                        <button class="btn btn-secondary cv-btn">
+                            <i class="fas fa-file-download"></i> <span data-i18n="hero.cv">Download CV</span> <i class="fas fa-chevron-down" style="font-size: 0.8em; margin-left: 5px;"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="CV_Miguel_Garcia_Hermida.pdf" download="CV_Miguel_Garcia_Hermida.pdf">🇬🇧 English</a>
+                            <a href="CV_Miguel_Garcia_Hermida_FR.pdf" download="CV_Miguel_Garcia_Hermida_FR.pdf">🇫🇷 Français</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about.title">01<span class="dot">.</span> About Me<span
+                        class="dot">.</span></h2>
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <p data-i18n="about.p1">
+                            I am a Cloud Platform & AI Ops Engineer bridging the gap between sophisticated infrastructure, artificial intelligence integration, and clear business logic. With a foundation forged in enterprise management, I bring a mature product vision to tech, ensuring that systems are not only resilient but solve real business problems efficiently.
+                        </p>
+                        <p data-i18n="about.p2">
+                            My technical core revolves around the <strong>AWS ecosystem</strong>, containerized deployments with <strong>Docker & Kubernetes (K8s)</strong>, and <strong>Terraform (IaC)</strong>. I build robust APIs using <strong>Node.js and Python</strong> to seamlessly connect enterprise data with <strong>LLMs and AI models (LangChain, RAG)</strong>, deploying them through automated GitHub Actions pipelines.
+                        </p>
+                        <p data-i18n="about.p3">
+                            <strong>Global Communication:</strong> With a background in Modern Languages Philology, my professional command of <strong>English</strong> and <strong>French</strong> is a core asset. It allows me to integrate seamlessly into international tech translating complex DevOps and AI concepts to non-technical stakeholders.
+                        </p>
+                        <div class="stack-showcase fade-in">
+                            
+                            <div class="stack-category">
+                                <h4 class="stack-category-title" data-i18n="about.stack.cloud">Cloud & Infrastructure</h4>
+                                <div class="stack-grid">
+                                    <div class="stack-item" style="--brand-color: #FF9900;">
+                                        <i class="fab fa-aws" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--brand-color);"></i>
+                                        <span>AWS Cloud</span>
+                                    </div>
+                                    <div class="stack-item" style="--brand-color: #844FBA;">
+                                        <i class="fas fa-cubes" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--brand-color);"></i>
+                                        <span>Terraform</span>
+                                    </div>
+                                    <div class="stack-item" style="--brand-color: #326CE5;">
+                                        <i class="fas fa-dharmachakra" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--brand-color);"></i>
+                                        <span>Kubernetes</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stack-category">
+                                <h4 class="stack-category-title" data-i18n="about.stack.devai">Development & AI Ops</h4>
+                                <div class="stack-grid">
+                                    <div class="stack-item" style="--brand-color: #3776AB;">
+                                        <i class="fab fa-python" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--brand-color);"></i>
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="stack-item" style="--brand-color: #339933;">
+                                        <i class="fab fa-node-js" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--brand-color);"></i>
+                                        <span>Node.js</span>
+                                    </div>
+                                    <div class="stack-item" style="--brand-color: #A0A0A0;">
+                                        <i class="fas fa-brain" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--brand-color);"></i>
+                                        <span>LLMs & LangChain</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stack-category">
+                                <h4 class="stack-category-title" data-i18n="about.stack.automation">Automation & CI/CD</h4>
+                                <div class="stack-grid">
+                                    <div class="stack-item" style="--brand-color: #2496ED;">
+                                        <i class="fab fa-docker" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--brand-color);"></i>
+                                        <span>Docker</span>
+                                    </div>
+                                    <div class="stack-item" style="--brand-color: #2088FF;">
+                                        <i class="fab fa-github" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--brand-color);"></i>
+                                        <span>GitHub Actions</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="about-profile fade-in">
+                        <div class="image-wrapper">
+                            <img src="img/profile.jpg" alt="Miguel Garcia Hermida" class="profile-img"
+                                onerror="this.src='https://ui-avatars.com/api/?name=Miguel+Garcia+Hermida&size=512&background=0D0D0D&color=fff'">
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Hermida95" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/miguel-garcía-hermida-796b67180/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:hermida95@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title" data-i18n="projects.title">02<span class="dot">.</span> Selected Work<span
+                        class="dot">.</span></h2>
+
+                <!-- Floating Image Container -->
+                <div id="hover-image-container" class="hover-image-container">
+                    <img id="hover-image" src="" alt="Project Preview">
+                </div>
+
+                <div class="projects-list-pure">
+
+                    <div class="project-row fade-in">
+                        <div class="project-row-info">
+                            <span class="project-overline" data-i18n="projects.p1.overline">Enterprise Tooling</span>
+                            <h3 class="project-title cursor-hover-item" data-image="img/icon.jpg"
+                                style="display:inline-block;">EvaOS</h3>
+                            <p class="project-desc" data-i18n="projects.p1.desc">
+                                A comprehensive workforce management application emphasizing Clean Architecture.
+                                Features dynamic salary calculations based on contract variables.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Clean Architecture</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Hermida95/eva-os" target="_blank" class="project-link"
+                                aria-label="GitHub Repository" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://eva-os-swart.vercel.app" target="_blank" class="project-link"
+                                aria-label="Live App" title="Live App">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-row fade-in">
+                        <div class="project-row-info">
+                            <span class="project-overline" data-i18n="projects.p2.overline">Security
+                                Infrastructure</span>
+                            <h3 class="project-title cursor-hover-item" data-image="img/PasswordGenerator.png"
+                                style="display:inline-block;">Secure Password Generator</h3>
+                            <p class="project-desc" data-i18n="projects.p2.desc">
+                                A privacy-first security utility engineered with pure JavaScript (Vanilla). Employs
+                                robust entropy generation optimized for zero external dependencies.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Cryptography Logic</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Hermida95/password-generator" target="_blank"
+                                class="project-link" aria-label="GitHub Repository" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://hermida95.github.io/password-generator/" target="_blank"
+                                class="project-link" aria-label="Live App" title="Live App">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-row fade-in">
+                        <div class="project-row-info">
+                            <span class="project-overline" data-i18n="projects.p3.overline">Algorithmic
+                                Engineering</span>
+                            <h3 class="project-title cursor-hover-item" data-image="img/proker.jpg"
+                                style="display:inline-block;">Proker Logic Engine</h3>
+                            <p class="project-desc" data-i18n="projects.p3.desc">
+                                A high-performance poker probability simulator showcasing the translation of highly
+                                complex mathematical logic into functional code.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Algorithmic Logic</span>
+                            <span>Math</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Hermida95/Proker" target="_blank" class="project-link"
+                                aria-label="GitHub Repository" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://hermida95.github.io/Proker/" target="_blank" class="project-link"
+                                aria-label="Live App" title="Live App">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title" data-i18n="experience.title">03. Career Trajectory<span class="dot">.</span>
+                </h2>
+                <div class="timeline">
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role" data-i18n="experience.e1.role">Cloud Platform & AI Ops Engineer</h3>
+                            <span class="timeline-date" data-i18n="experience.e1.date">2026 &mdash; Present</span>
+                            <p class="timeline-details" data-i18n="experience.e1.desc">
+                                Specializing in highly available architectures (AWS) and Infrastructure as Code (Terraform). Deploying and scaling containerized applications with Docker and Kubernetes, while orchestrating LLMs and AI services via robust Node.js/Python backends and GitHub Actions CI/CD pipelines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role" data-i18n="experience.e2.role">Higher Degree in Web Application
+                                Development (DAW)</h3>
+                            <span class="timeline-date" data-i18n="experience.e2.date">2024 &mdash; 2026</span>
+                            <p class="timeline-details" data-i18n="experience.e2.desc">
+                                Formalized deep technical skills traversing the entire software stack. Engineered complex backend solutions, REST APIs, and gained extensive practice in database administration, server deployments, and modern architectural patterns.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role" data-i18n="experience.e3.role">Operations & Project Management
+                            </h3>
+                            <span class="timeline-date" data-i18n="experience.e3.date">2015 &mdash; 2022</span>
+                            <p class="timeline-details" data-i18n="experience.e3.desc">
+                                End-to-end management of retail operations. Developed resilient leadership, high-stakes
+                                negotiation skills, and a holistic, client-facing product strategy that directly
+                                translates into building infrastructure that meets precise user needs and business metrics.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-box fade-in">
+                    <h2 class="contact-title" data-i18n="contact.title">Let's build scalable infrastructure<span
+                            class="dot">.</span></h2>
+                    <p class="contact-desc" data-i18n="contact.desc">
+                        I am currently available for new opportunities. Whether you have a position open in the Vaud ecosystem or just want to discuss Cloud architecture and AI Ops, my inbox is open.
+                    </p>
+                    <a href="mailto:hermida95@gmail.com" class="btn btn-primary btn-large" data-i18n="contact.btn">Get
+                        in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="brand">Miguel Garcia Hermida</div>
+            <div class="copy" data-i18n="footer.copy">
+                &copy; <span id="year"></span> &mdash; Engineered with precision and IaC.
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/Hermida95" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/miguel-garcía-hermida-796b67180/" target="_blank"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

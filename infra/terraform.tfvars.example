@@ -1,0 +1,9 @@
+# Copia este fichero a terraform.tfvars y ajusta los valores.
+# terraform.tfvars está en .gitignore (puede contener datos que no quieras versionar).
+
+region       = "eu-west-1"
+aws_profile  = "crc"
+project_name = "cloud-resume"
+
+# Debe ser GLOBALMENTE ÚNICO y empezar por crc- (permisos IAM acotados a ese prefijo).
+site_bucket_name = "crc-miguel-site"

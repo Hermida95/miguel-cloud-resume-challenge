@@ -1,0 +1,42 @@
+# ---- macOS ----
+.DS_Store
+
+# ---- Credenciales / secretos (NUNCA subir) ----
+.env
+.env.*
+*.pem
+credentials
+aws-credentials*
+.aws/
+
+# ---- Terraform ----
+# Directorio de plugins/módulos descargados
+.terraform/
+# Ficheros de estado: pueden contener secretos en claro
+*.tfstate
+*.tfstate.*
+# Crash logs
+crash.log
+crash.*.log
+# Variables: pueden contener valores sensibles. Subimos solo el ejemplo.
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+# Planes guardados (pueden incluir datos sensibles)
+*.tfplan
+# Sí queremos versionar el lock de proveedores:
+!.terraform.lock.hcl
+
+# ---- Python (backend Lambda) ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# ---- Frontend: helper de testing local, no va a producción ----
+frontend/_seed_dark_fr.html
